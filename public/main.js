@@ -80,7 +80,7 @@ getJSON.onclick=()=>{
 let n=1
 getPage.onclick=()=>{
     const request=new XMLHttpRequest()
-    request.open('GET',`db/page${n+1}`)
+    request.open('GET',`db/page${n+1}.json`)
     request.onreadystatechange=()=>{
         if(request.readyState===4){
             if(request.status>=200 && request.status<300){
